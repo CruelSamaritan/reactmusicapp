@@ -11,13 +11,12 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 module.exports = {
 
     entry: './public/index.js',
-    //
+    // tylko dla development, nie production (!)
     //devServer: {
     //    contentBase: path.join(__dirname, "dist"),
     //    compress: true,
     //    port: process.env.PORT || 8080,
     //    allowedHosts: [
-    //        'reactmusicapp.herokuapp.com',
     //        '192.168.1.4'
     //    ]
     //},
