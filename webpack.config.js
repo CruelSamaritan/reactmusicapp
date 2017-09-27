@@ -12,8 +12,18 @@ module.exports = {
 
     entry: './public/index.js',
 
+    devServer: {
+        contentBase: path.join(__dirname, "dist"),
+        compress: true,
+        port: process.env.PORT || 8080,
+        allowedHosts: [
+            'reactmusicapp.herokuapp.com',
+            '192.168.1.4'
+        ]
+    },
+
     output: {
-        path: path.resolve('dist'),
+        path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js',
         publicPath: "/"
     },
