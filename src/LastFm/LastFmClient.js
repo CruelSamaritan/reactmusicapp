@@ -18,7 +18,6 @@ export default class LastFmClient{
             path: Constants.RemoteServer.ApiPath
         });
 
-
         axios.get(url,
             {
                 //timeout: 8000,
