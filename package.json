@@ -22,13 +22,14 @@
     "react-dom": "^15.6.1",
     "react-youtube": "^7.4.0",
     "webpack": "^3.5.5",
-    "webpack-dev-server": "^2.7.1"
-  },
-  "devDependencies": {
+    "webpack-dev-server": "^2.7.1",
     "css-loader": "^0.28.5",
     "file-loader": "^0.11.2",
     "style-loader": "^0.18.2",
     "url-loader": "^0.5.9"
+  },
+  "devDependencies": {
+
   },
   "author": "Preston Laren",
   "license": "ISC"
