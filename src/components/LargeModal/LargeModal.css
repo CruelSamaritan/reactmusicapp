@@ -1,0 +1,240 @@
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    /*custom nazwa podana jako prop do LargeModal*/
+    .modal-dialog-custom{
+        width: 90%;
+    }
+}
+
+/*overwrite klas Bootstrap'a*/
+/*.modal.in .modal-dialog {*/
+    /*-webkit-transform: translate(0, 50%) !important;*/
+    /*-ms-transform: translate(0, 50%)!important;*/
+    /*-o-transform: translate(0, 50%)!important;*/
+    /*transform: translate(0, 50%) !important;*/
+/*}*/
+
+/*.modal.fade .modal-dialog {*/
+    /*-webkit-animation: fadein 1s; !* Safari, Chrome and Opera > 12.1 *!*/
+    /*-moz-animation: fadein 1s; !* Firefox < 16 *!*/
+    /*-ms-animation: fadein 1s; !* Internet Explorer *!*/
+    /*-o-animation: fadein 1s; !* Opera < 12.1 *!*/
+    /*animation: fadein 1s;*/
+/*}*/
+
+
+.modal-header .close span:not(.sr-only){
+
+    position: inherit;
+}
+
+.modal-footer button{
+
+    display: none;
+}
+
+
+#contained-modal-title-lg{
+    font-weight: 300;
+    font-size: 1.4em;
+}
+
+.modal-dialog-custom .modal-content{
+
+    background-color: var(--dim-white-background-color);
+    overflow: hidden;
+}
+
+.modal-body{
+    padding: 20px 20px 0 20px !important;
+    /*min-height: 550px;*/
+    /*height: 600px;*/
+}
+
+.modal-text-row{
+    height: 100%;
+}
+
+.modal-album-desc{
+    height: 40%;
+    min-height: 15em;
+}
+
+#modal-album-desc-header{
+    margin-top: 0;
+    border-bottom: 1px solid darkgrey;
+    color: var(--darkgrey-font-color);
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+#modal-album-desc-content{
+    font-size: 0.9em;
+}
+
+.modal-tracklist{
+    height: 60%;
+    min-height: 20em;
+}
+
+#modal-tracks-table-wrapper{
+
+    overflow-y: scroll;
+    min-height: 300px;
+    height: 300px;
+}
+
+#modal-tracklist-header{
+    font-weight: 300;
+    border-bottom: 1px solid darkgrey;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+}
+
+
+.modal-cover-img{
+
+    width: 100%;
+    padding: 5px;
+    border: 1px solid var(--lightgrey-font-color);
+}
+
+.modal-track-row{
+
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.modal-track-row:hover{
+    background-color: rgba(0,0,0,.1);
+    cursor: pointer;
+}
+
+
+.modal-play-controls{
+    margin: 0 0 0 0;
+    font-size: 1.9em;
+}
+
+/*.modal-play-controls:hover{*/
+
+    /*cursor: pointer;*/
+/*}*/
+
+.modal-play-controls.icofont-youtube-play{
+    color: var(--red-font-color);
+}
+
+.modal-corrupted-track:hover{
+    cursor: not-allowed;
+}
+
+
+#modal-tracks-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#modal-tracks-table thead > tr{
+   height: 0;
+}
+
+#modal-tracks-table tbody tr{
+    min-height: 3em;
+    height: 3em;
+}
+
+#modal-tracks-table th, td {
+    border-bottom: 1px solid #ddd;
+}
+
+#modal-video-section{
+    margin-top: 10px;
+}
+
+.modal-video-player{
+    padding: 5px;
+    border: 1px solid var(--lightgrey-font-color) !important;
+}
+
+/*#modal-tracks-table .fa-spin{*/
+    /*font-size: 1.5em;*/
+    /*margin: 0 0 0 0;*/
+/*}*/
+
+.icofont-spin{
+
+    animation-name: fa-spin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+#modal-table-th-tracknumber{
+    width: 8%
+}
+#modal-table-th-title{
+    width: 72%
+}
+#modal-table-th-controls{
+    width: 10%;
+}
+#modal-table-th-duration{
+    width: 10%;
+    text-align: center;
+}
+
+.modal-table-td-controls{
+    text-align: center;
+}
+.modal-table-td-duration{
+    text-align: center;
+}
+
+#modal-background-stripes{
+    position: absolute;
+    width: 150%;
+    height: 15%;
+    left: -10%;
+    bottom: 0;
+    -ms-transform: rotate(-36deg);
+    -webkit-transform: rotate(-36deg);
+    transform: rotate(-36deg);
+    opacity: .15;
+}
+
+.modal-background-stripe{
+    position: absolute;
+    width: 100%;
+    /* bottom: 0; */
+    height: 33.33%;
+}
+
+#modal-stripe-one{
+    background-color: var(--miami-green-color);
+    top: 0;
+}
+
+#modal-stripe-two{
+    background-color: var(--bondi-blue-color);
+    top: 33.33%
+}
+
+#modal-stripe-three{
+    background-color: var(--miami-violet-color);
+    bottom: 0;
+}

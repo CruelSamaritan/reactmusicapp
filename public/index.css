@@ -1,0 +1,46 @@
+:root{
+    --semitransparent-white-background-color: rgba(255,255,255,.85);
+    --dim-white-background-color: #f5f5f5;
+    --lightgrey-font-color: lightgrey;
+    --dim-font-color: ghostwhite;
+    --blue-font-color: #337ab7;
+    --white-font-color: white;
+    --red-font-color: red;
+    --darkgrey-font-color: darkslategrey;
+    --bondi-blue-color: #00c0ff;
+    --top-container-size: 400px;
+    --verylightgrey-color: #e6e6e6;
+    --miami-green-color: #00ff42;
+    --miami-violet-color:#ff00d9;
+    --bermuda-darkblue-color: #243448;
+}
+
+#html{
+
+    font-family: Gotham,gotham,Verdana,sans-serif;
+}
+
+body{
+    overflow: visible;
+}
+
+.footer-main{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: var(--verylightgrey-color);
+}
+
+#footer-main-copyright{
+    color: darkgrey;
+    font-size: .8em;
+    padding-top: 5px;
+    border-top: 1px solid var(--lightgrey-font-color);
+}
+
+#footer-main-additional{
+    text-align: left;
+    color: darkgrey;
+    margin-bottom: 15px;
+}

@@ -1,0 +1,25 @@
+.video-frame{
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+}
+
+.video-frame span{
+    width: inherit;
+    height: inherit;
+    top: 0;
+}
+
+.video-cancel-icon{
+
+    position: absolute;
+    color: white;
+    right: 5px;
+    top: 5px;
+    font-size: 1.2em;
+}
+
+.video-cancel-icon:hover{
+
+    cursor: pointer;
+}

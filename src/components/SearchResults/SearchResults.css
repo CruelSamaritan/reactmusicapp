@@ -1,0 +1,99 @@
+
+#bottom-row-wrapper{
+
+    height: 100%;
+    overflow: scroll;
+    /*display: inline-flex;*/
+}
+
+.covers-single-cover-col{
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.cover-img-wrapper{
+    position: relative;
+}
+
+.img-overlay{
+    border-radius: 5px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity .5s, visibility .5s;
+    -moz-transition: opacity .5s, visibility .5s;
+    -ms-transition: opacity .5s, visibility .5s;
+    -o-transition: opacity .5s, visibility .5s;
+    transition: opacity .5s, visibility .5s;
+}
+
+.cover-img{
+    border-radius: 5px;
+}
+
+.cover-img-wrapper:hover > .img-overlay{
+    opacity: 0.8;
+    visibility: visible;
+}
+
+.covers-hoverable:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.img-overlay .fa{
+    position: absolute;
+    color: var(--bondi-blue-color)
+}
+
+.img-overlay .fa-play-circle{
+    left: 50%;
+    bottom: 50%;
+    font-size: 4em;
+    margin-left: -0.5em;
+    margin-bottom: -0.5em;
+}
+
+.img-overlay .fa-favorite-controls{
+    font-size: 2em;
+    left: 5%;
+    bottom: 5%;
+
+}
+
+.img-overlay .fa-favorite-controls:hover{
+    color: var(--red-font-color)
+}
+
+#covers-cover-description{
+
+    max-width: 100%;
+    display: inline-block;
+    white-space: nowrap;
+    float: left;
+    text-align: left;
+}
+
+#covers-cover-artist{
+
+    font-weight: 400;
+    margin-bottom: 5px;
+    /*margin-top: 30px;*/
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1em;
+}
+
+#covers-cover-name{
+    margin-bottom: 5px;
+    font-weight: 200;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    font-size: .9em;
+    color: slategrey;
+}
