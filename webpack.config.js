@@ -12,7 +12,7 @@ module.exports = {
 
     entry: './public/index.js',
 
-    target: 'web',
+    target: 'web', 
 
     output: {
         path: path.resolve('dist'),
