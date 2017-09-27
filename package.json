@@ -5,7 +5,7 @@
   "main": "webpack.config.js",
   "scripts": {
     "heroku-postbuild": "webpack -p --config ./webpack.config.js --progress",
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server --host https://reactmusicapp.herokuapp.com/"
   },
   "dependencies": {
     "axios": "^0.16.2",
