@@ -12,8 +12,6 @@ module.exports = {
 
     entry: './public/index.js',
 
-    target: 'web',
-
     output: {
         path: path.resolve('dist'),
         filename: 'bundle.js',

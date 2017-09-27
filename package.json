@@ -4,9 +4,11 @@
   "description": "React Entertainment Module",
   "main": "webpack.config.js",
   "scripts": {
-    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
-    "prod": "NODE_ENV=production node ./public/index.js",
-    "postinstall": "webpack -p"
+    "heroku-postbuild": "webpack -p --config ./webpack.config.js --progress",
+    "start": "webpack-dev-server --host 0.0.0.0"
+//    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+//    "prod": "NODE_ENV=production node server.js",
+//    "postinstall": "webpack -p"
   },
   "dependencies": {
     "axios": "^0.16.2",
@@ -23,14 +25,13 @@
     "react-dom": "^15.6.1",
     "react-youtube": "^7.4.0",
     "webpack": "^3.5.5",
-    "webpack-dev-server": "^2.7.1",
+    "webpack-dev-server": "^2.7.1"
+  },
+  "devDependencies": {
     "css-loader": "^0.28.5",
     "file-loader": "^0.11.2",
     "style-loader": "^0.18.2",
     "url-loader": "^0.5.9"
-  },
-  "devDependencies": {
-
   },
   "author": "Preston Laren",
   "license": "ISC"
