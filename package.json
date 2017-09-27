@@ -4,8 +4,6 @@
   "description": "React Entertainment Module",
   "main": "webpack.config.js",
   "scripts": {
-//    "heroku-postbuild": "webpack -p --config ./webpack.config.js --progress",
-//    "start": "webpack-dev-server --host 0.0.0.0"
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "prod": "NODE_ENV=production node server.js",
     "postinstall": "webpack -p"
