@@ -4,7 +4,6 @@
   "description": "React Entertainment Module",
   "main": "webpack.config.js",
   "scripts": {
-    "heroku-postbuild": "webpack -p --config ./webpack.prod.config.js --progress",
     "start": "node server.prod.js"
   },
   "dependencies": {
