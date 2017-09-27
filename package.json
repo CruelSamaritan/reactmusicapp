@@ -4,8 +4,7 @@
   "description": "React Entertainment Module",
   "main": "webpack.config.js",
   "scripts": {
-    "heroku-postbuild": "webpack -p --config ./webpack.prod.config.js --progress",
-    "start": "webpack-dev-server"
+    "heroku-postbuild": "webpack -p --config ./webpack.prod.config.js --progress"
   },
   "dependencies": {
     "axios": "^0.16.2",
